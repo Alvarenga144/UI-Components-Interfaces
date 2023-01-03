@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Components Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favComponents.ico" type="image/png">
+    <!-- Local Bootstrap CSS
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css"> -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Navbar -->
+        <header id="main-navbar">
+            <img src="images/icons/list.svg" alt="burguerMenu" class="BurguerMenu">
+            <a href="#" id="logo-main-navbar" class="logo-main">UI Components</a>
+            <form action="#" method="#">
+                <input type="text" placeholder="Search Something..." id="search-input">
+                <button type="submit" id="btn-search"><img src="images/icons/search.svg" alt="search"></button>
+            </form>
+            <ul>
+                <li><a href="https://github.com/Alvarenga144" target="_blank"><img src="images/icons/github.svg" alt="github" class="li-ico"></a></li>
+                <li><a href="#"><img src="images/icons/bell.svg" alt="notis" class="li-ico"></a></li>
+                <li><a href="#" id="login-button-main">Log in</a></li>
+                <li><a href="#" id="register-button-main">Register</a></li>
+            </ul>
+        </header>
+        <!-- Side Navbar -->
+        <nav id="side-navbar-elements">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/house.svg" alt="logo-sidebar">
+                        <span class="nav-item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/person.svg" alt="logo-sidebar">
+                        <span class="nav-item">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/wallet2.svg" alt="logo-sidebar">
+                        <span class="nav-item">Wallet</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/bookmarks.svg" alt="logo-sidebar">
+                        <span class="nav-item">Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/menu-button-wide.svg" alt="logo-sidebar">
+                        <span class="nav-item">Task</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/gear.svg" alt="logo-sidebar">
+                        <span class="nav-item">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/question-octagon.svg" alt="logo-sidebar">
+                        <span class="nav-item">Help</span>
+                    </a>
+                </li>
+                <li  class="side-nav-botton-ico">
+                    <a href="#">
+                        <img class="side-navbar-icons" src="images/icons/box-arrow-right.svg" alt="logo-sidebar">
+                        <span class="nav-item">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Components's Grid -->
+        <p id="my-Dashboard-words">My Dashboard 🚀</p>
+        <div class="componets-container">
+            <!-- Profile Pic -->
+            <div class="compo-cards">
+                <div class="div-profile-pic">
+                    <img src="images/DrawKit Vector Illustration Team Work Cut.png" alt="profile-pic-card">
+                    <div id="star-circle">
+                        <img src="images/icons/patch-check.svg" alt="star-circle">
+                    </div>
+                    <div id="check-list">
+                        <img src="images/icons/star.svg" alt="star-list">
+                        <img src="images/icons/list-check.svg" alt="list-chekss">
+                    </div>
+                </div>
+                <div class="paragraph-profile-pic">
+                    <p>Welcome back,</p>
+                    <p>Esteban Alvarenga.</p>
+                </div>
+                <button>View Profile
+                    <img src="images/icons/box-arrow-up-right.svg" alt="arrow-blank">
+                </button>
+            </div>
+            <!-- Wallet Crypto -->
+            <div class="compo-cards">
+                <div class="saludo-wallet">
+                    <p>Hello, <br> <b>Esteban</b></p>
+                    <img src="images/icons/qr-code-scan.svg" alt="qr-code-wallet" id="qr-code-wallet">
+                </div>
+                <div class="your-balances">
+                    <p>Your balances</p>
+                    <div id="content-balances">
+                        <div class="dollars-wallet">
+                            <div>USD</div>
+                            <p>$1,280.50</p>
+                        </div>
+                        <div class="bitcoin-wallet">
+                            <div>BTC</div>
+                            <p>$1,778.48</p>
+                            <p>0.02815489 BTC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="your-movements">
+                    <p id="my-movements">Movements</p>
+                    <div id="today-movements">
+                        <p class="dates-movements">Today</p>
+                        <div class="you-recived-dollars">
+                            <div><img src="images/Dollar.png" alt="your-img-transac"></div>
+                            <div>
+                                <p>You Received</p>
+                                <p>+$50.00 Dollars</p>
+                            </div>
+                        </div>
+                        <div class="you-recived-bitcoin">
+                            <div><img src="images/Bitcoin.svg.png" alt="your-img-transac"></div>
+                            <div>
+                                <p>You sent</p>
+                                <p>-$144.00 USD in Bitcoin </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="yesterday-movements">
+                        <p class="dates-movements">Thursday, 29 December 2022</p>
+                        <div class="you-recived-bitcoin">
+                            <div><img src="images/Bitcoin.svg.png" alt="your-img-transac"></div>
+                            <div>
+                                <p>You Received</p>
+                                <p>+$9.99 USD in Bitcoin </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="all-movements-crypto">View all movements</button>
+                </div>
+            </div>
+            <!-- a -->
+            <div class="compo-cards"></div>
+            <!-- Music Player -->
+            <div class="compo-cards">
+
+            </div>
+            <!-- a -->
+            <div class="compo-cards"></div>
+            <!-- a -->
+            <div class="compo-cards"></div>
+            <!-- a -->
+            <div class="compo-cards"></div>
+            <!-- a -->
+            <div class="compo-cards"></div>
+        </div>
+        
+    
+    </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="resources/js/bootstrap.min.js"></script> -->
+    <!-- Main JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

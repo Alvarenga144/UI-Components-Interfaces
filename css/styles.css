@@ -1,0 +1,581 @@
+/* Components Page's main styles */
+/*todo <============================= VARIABLES AND BASIC DECLARATIONS ====================================>   */
+
+:root {
+    /* Colors Palette */
+    --pure-white: #FFFFFF;
+    --pure-black: #000000;
+    --yellowcalm: #e7e247;
+    --greenbrown: #3d3b30;
+    --palee-blue: #4d5061;
+    --soft-bluee: #5c89bc;
+    --whitebones: #e9edde;
+    --middlegrey: #CCCCCC;
+    
+    /* Font Sizes */
+    --xl: 30px;
+    --ld: 20px;
+    --md: 18px;
+    --sm: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    background: var(--whitebones);
+    min-height: 200vh;
+}
+
+/*todo <============================= MAIN NAVBAR MANU FIXED IN THE TOP ===================================>   */
+
+#main-navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1.0s;
+    padding: 26px 20px;
+    z-index: 100000;
+    /*           X | Y |blur|ratio   color*/
+    box-shadow: 0px 0px 10px 0px var(--palee-blue);
+}
+header.sticky {
+    padding: 16px 80px !important;
+    background-color: var(--palee-blue);
+}
+#logo-main-navbar{
+    position: relative;
+    font-size: var(--ld);
+    font-weight: 700;
+    color: var(--pure-black);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.8s;
+}
+header form {
+    display: flex;
+    height: 30px;
+    border-radius: 50px;
+    padding: 2px;
+    min-width: 40%;
+    background-color: var(--pure-white);
+    transition: 0.8s;
+}
+header form input {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: var(--soft-bluee);
+    font-weight: 400;
+    font-size: var(--sm);
+    background: none;
+    border: none;
+    transition: 0.4s;
+    border-radius: 50px 0px 0px 50px;
+}
+header form input:focus {
+    outline: none;
+    background-color: var(--whitebones);
+}
+header form button {
+    padding: 0px 10px 0px 10px;
+    background-color: var(--soft-bluee);
+    border: none;
+    cursor: pointer;
+    font-size: var(--md);
+    color: var(--pure-white);
+    border-radius: 8px 50px 50px 8px;
+    transition: 0.4s;
+}
+header form button:hover {
+    background-color: var(--yellowcalm);
+}
+header form button img {
+    height: 14px;
+    width: 14px;
+    margin: 0;
+    padding: 0;
+}
+header.sticky form {
+    background-color: var(--palee-blue);
+    border: 1px solid var(--soft-bluee);
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    margin: 0 14px;
+    text-decoration: none;
+    color: var(--pure-black);
+    font-weight: 400;
+    transition: 0.4s;
+    text-align: center;
+}
+header ul li a img.li-ico {
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+    transition: 0.6s;
+}
+header ul li img.li-ico:hover {
+    background-color: var(--yellowcalm);
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    box-shadow: 0px 0px 20px 2px var(--yellowcalm);
+}
+#login-button-main {
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+#login-button-main:hover {
+    color: var(--yellowcalm);
+}
+#register-button-main {
+    color: var(--pure-black);
+    background-color: var(--yellowcalm);
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+#register-button-main:hover {
+    color: var(--soft-bluee);
+    background-color: var(--yellowcalm);
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+.BurguerMenu {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* sticky classes */
+header.sticky #logo-main-navbar,
+header.sticky ul li a {
+    color: var(--pure-white);
+}
+header.sticky ul li img.li-ico {
+    background-color: var(--whitebones);
+    border-radius: 100%;
+    height: 26px;
+    width: 26px;
+    padding: 2px;
+    transition: 0.8s;
+}
+header.sticky ul li img.li-ico:hover {
+    border-radius: 100%;
+    height: 26px;
+    width: 26px;
+    box-shadow: 0px 0px 20px 2px var(--pure-white);
+}
+
+/* Medias Displays */
+@media (max-width: 800px){
+    header form {
+        display: none;
+    }
+}
+@media (max-width: 640px){
+    header form,
+    header ul {
+        display: none;
+    }
+    .BurguerMenu {
+        display: block;
+    }
+}
+
+/*todo <============================= SIDE NAVBAR IN THE LEFT  ============================================>   */
+#side-navbar-elements {
+    position: fixed;
+    top: 82px;
+    bottom: 0;
+    left: 0px;
+    height: 520px;
+    background: var(--whitebones);
+    width: 190px;
+    box-shadow: 0px 20px 35px var(--pure-black);
+    padding-top: 18px;
+    border-radius: 0px 36px 36px 0px;
+    transition: 0.8s;
+    display: none;
+    z-index: 90000;
+}
+.stickySide{
+    background: var(--soft-bluee) !important;
+}
+#side-navbar-elements ul {
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+#side-navbar-elements ul li {
+    margin: 0px 20px 0px 20px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    
+}
+#side-navbar-elements ul li:hover {
+    margin: 0px 20px 0px 20px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: var(--yellowcalm);
+}
+#side-navbar-elements ul li a {
+    text-decoration: none;
+}
+#side-navbar-elements .side-navbar-icons {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    vertical-align: middle;
+}
+#side-navbar-elements span {
+    color: var(--pure-black);
+    font-size: var(--sm);
+    font-weight: 400;
+    margin-left: 10px;
+    text-transform: capitalize;
+    transition: 0.8s;
+}
+nav.stickySide ul li span {
+    color: var(--pure-white) !important;
+}
+.side-nav-botton-ico {
+    position: absolute;
+    bottom: 6px;
+}
+.side-nav-botton-ico span {
+    margin: 0px 20px 0px 20px;
+}
+
+/*todo <============================= MY DASHBOARD  ============================================> */
+
+#my-Dashboard-words {
+    font-size: var(--xl);
+    font-weight: 700;
+    color: var(--pure-black);
+    position: absolute;
+    top: 100px;
+    left: 44px;
+    letter-spacing: 3px;
+}
+
+/*todo <============================= COMPONENTS CONTAINER GRID  ============================================> */
+
+.componets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 28px;
+    place-content: center;
+    position: relative;
+    top: 100px;
+}
+.componets-container .compo-cards {
+    width: 100%;
+    height: 360px;
+    /*! border: 2px solid #000000; */
+}
+@media (max-width: 640px) {
+    .componets-container {
+        grid-template-columns: repeat(auto-fill, 280px);
+        gap: 22px;
+    }
+    .componets-container .compo-cards {
+        width: 100%;
+    }
+}
+
+/*todo <============================= PROFILE CARD  ============================================> */
+
+.componets-container .compo-cards:nth-child(1) {
+    display: grid;
+    justify-items: center;
+    background-color: var(--soft-bluee);
+    border-radius: 25px;
+    margin-top: 68px;
+}
+.div-profile-pic {
+    background-color: var(--palee-blue);
+    position: relative;
+    top: 34px;
+    width: 148px;
+    height: 148px;
+    border-radius: 100%;
+}
+.compo-cards .div-profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+#star-circle {
+    width: 34px;
+    height: 34px;
+    background-color: var(--whitebones);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: -14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#star-circle img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+#check-list {
+    width: 72px;
+    height: 34px;
+    background-color: var(--whitebones);
+    border-radius: 12px;
+    position: absolute;
+    top: 10px;
+    left: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-bluee);
+}
+#check-list img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+#check-list img:nth-child(2) {
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+.compo-cards .paragraph-profile-pic {
+    display: grid;
+    justify-items: center;
+}
+.compo-cards .paragraph-profile-pic p:nth-child(1) {
+    position: relative;
+    top: 18px;
+    font-size: var(--md);
+    font-weight: 300;
+}
+.compo-cards .paragraph-profile-pic p:nth-child(2) {
+    font-size: var(--ld);
+    font-weight: 700;
+}
+.compo-cards button {
+    font-size: var(--sm);
+    font-weight: 700;
+    height: 40px;
+    padding: 0px 66px 0px 66px;
+    border-radius: 50px;
+    border: none;
+    color: var(--palee-blue);
+    background-color: var(--pure-white);
+    cursor: pointer;
+}
+.compo-cards button img {
+    height: 12px;
+    margin-left: 4px;
+}
+.compo-cards button:hover {
+    color: var(--pure-black);
+    background-color: var(--yellowcalm);
+}
+
+/*todo <============================= WALLET CRYPTO  ============================================> */
+
+.componets-container .compo-cards:nth-child(2) {
+    height: 506px;
+    border-radius: 25px;
+    background-color: var(--pure-white);
+}
+.compo-cards .saludo-wallet {
+    background: var(--middlegrey);
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 40px 10px;
+}
+.compo-cards .saludo-wallet p {
+    font-size: var(--ld);
+    font-weight: 400;
+}
+.compo-cards .saludo-wallet #qr-code-wallet {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    margin-top: 4px;
+}
+.compo-cards .your-balances #content-balances {
+    display: flex;
+    justify-content: space-between;
+}
+.compo-cards .your-balances {
+    background-color: var(--pure-white);
+    border-radius: 25px;
+    padding: 20px 10px 20px 10px;
+    position: relative;
+    top: -25px;
+}
+.compo-cards .your-balances p:nth-child(1) {
+    color: var(--pure-black);
+    font-size: var(--md);
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10px;
+}
+#content-balances .dollars-wallet div:nth-child(1){
+    position: relative;
+    color: var(--pure-white);
+    background-color: #0048ff;
+    border-radius: 6px;
+    font-size: var(--md);
+    font-weight: 700;
+    width: 48px;
+    text-align: center;
+    padding: 2px 4px 2px 4px;
+}
+#content-balances .dollars-wallet p {
+    color: var(--pure-black);
+    font-size: var(--md);
+    font-weight: 700;
+    margin-top: 4px;
+}
+#content-balances .bitcoin-wallet {
+    text-align: right;
+}
+#content-balances .bitcoin-wallet div:nth-child(1) {
+    position: relative;
+    color: var(--pure-white);
+    background-color: #f69219;
+    border-radius: 6px;
+    font-size: var(--md);
+    font-weight: 700;
+    width: 48px;
+    text-align: center;
+    margin-left: 80px;
+    padding: 2px 4px 2px 4px;
+}
+#content-balances .bitcoin-wallet p:nth-child(2) {
+    color: var(--pure-black);
+    font-size: var(--md);
+    font-weight: 700;
+    margin-top: 4px;
+}
+#content-balances .bitcoin-wallet p:nth-child(3) {
+    color: var(--palee-blue);
+    font-size: var(--sm);
+    font-weight: 200;
+}
+.compo-cards .your-movements {
+    position: relative;
+    top: -44px;
+    padding: 0px 10px 20px 10px;
+}
+.compo-cards .your-movements #my-movements {
+    color: var(--pure-black);
+    font-size: var(--md);
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 4px;
+}
+.dates-movements {
+    font-size: var(--sm);
+    font-weight: 400;
+    position: relative;
+    color: var(--palee-blue);
+    margin-top: 6px;
+}
+#today-movements .you-recived-dollars {
+    display: flex;
+    justify-content: left;
+    vertical-align: middle;
+    padding-top: 4px;
+}
+#today-movements .you-recived-dollars div img {
+    width: 46px;
+    height: 42px;
+    border-radius: 25px;
+}
+#today-movements .you-recived-dollars div:nth-child(2) {
+    font-size: var(--sm);
+    font-weight: 400;
+    position: relative;
+    margin-left: 4px;
+}
+#today-movements .you-recived-dollars div:nth-child(2) p:nth-child(2) {
+    font-size: var(--sm);
+    font-weight: 700;
+}
+.you-recived-bitcoin {
+    display: flex;
+    justify-content: left;
+    vertical-align: middle;
+    padding-top: 4px;
+}
+.you-recived-bitcoin div img {
+    width: 38px;
+    height: 38px;
+    border-radius: 25px;
+    margin-left: 4px;
+}
+.you-recived-bitcoin div:nth-child(2) {
+    font-size: var(--sm);
+    font-weight: 400;
+    position: relative;
+    margin-left: 8px;
+}
+.you-recived-bitcoin div:nth-child(2) p:nth-child(2) {
+    font-size: var(--sm);
+    font-weight: 700;
+}
+#all-movements-crypto {
+    font-size: var(--sm);
+    font-weight: 700;
+    height: 40px;
+    padding: 0px 66px 0px 66px;
+    border-radius: 50px;
+    border: none;
+    color: var(--palee-blue);
+    background-color: var(--pure-white);
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+#all-movements-crypto:hover {
+    color: var(--pure-black);
+    background-color: var(--middlegrey);
+}
+
+
+
+
+/*todo <============================= MUSIC PLAYER ============================================> */
+
+.componets-container .compo-cards:nth-child(4) {
+    height: 440px;
+    border-radius: 25px;
+}
