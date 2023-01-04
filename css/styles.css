@@ -216,8 +216,8 @@ header.sticky ul li img.li-ico:hover {
     padding-top: 18px;
     border-radius: 0px 36px 36px 0px;
     transition: 0.8s;
-    display: none;
     z-index: 90000;
+    display: none;
 }
 .stickySide{
     background: var(--soft-bluee) !important;
@@ -516,14 +516,18 @@ nav.stickySide ul li span {
     padding-top: 4px;
 }
 #today-movements .you-recived-dollars div img {
-    width: 46px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     border-radius: 25px;
+    margin-left: 4px;
 }
 #today-movements .you-recived-dollars div:nth-child(2) {
     font-size: var(--sm);
     font-weight: 400;
     position: relative;
+    margin-left: 4px;
+}
+#today-movements .you-recived-dollars div:nth-child(2) p{
     margin-left: 4px;
 }
 #today-movements .you-recived-dollars div:nth-child(2) p:nth-child(2) {
@@ -573,7 +577,7 @@ nav.stickySide ul li span {
 /*todo <============================= STORIES INSTAGRAM ============================================> */
 
 .scroller {
-    width: 104%;
+    width: 103%;
     height: 146px;
     border: 2px solid var(--middlegrey);
     border-radius: 12px;
@@ -711,7 +715,7 @@ nav.stickySide ul li span {
 /*todo <============================= MOBILE BUTTON NAVBAR ============================================> */
 
 #mobile-btn-navbar {
-    width: 104%;
+    width: 103%;
     background-color: var(--pure-white);
     border: 2px solid var(--middlegrey);
     border-radius: 12px;
@@ -738,4 +742,37 @@ nav.stickySide ul li span {
 .componets-container .compo-cards:nth-child(4) {
     height: 440px;
     border-radius: 25px;
+}
+
+.componets-container .compo-cards:nth-child(5) {
+    height: 440px;
+    border-radius: 25px;
+    margin-top: -76px;
+}
+
+
+
+
+
+
+/*todo <============================= SALE TICKET FORMAT ============================================> */
+
+
+
+
+
+
+
+
+/*todo <============================= COMPONENTS GRID MOBILE  ============================================> */
+
+@media (max-width: 1284px) {
+    .componets-container .compo-cards:nth-child(5) {
+        margin-top: 0px;
+    }
+}
+@media (min-width: 1610px) {
+    .componets-container .compo-cards:nth-child(5) {
+        margin-top: 0px;
+    }
 }
