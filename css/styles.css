@@ -625,13 +625,12 @@ nav.stickySide ul li span {
     #1cd14f 100%, #1cd14f 100%, #1cd14f 100%);
 }
 .scroller-item:hover::before {
-    transform: 1.5;
     animation-duration: 1.5s;
     animation-name: story;
     animation-iteration-count: infinite;
 }
 .scroller-item:hover:nth-child(2):before {
-    transform: 1.5;
+    transition: 1.5;
     animation-duration: 1.5s;
     animation-name: story-friends;
     animation-iteration-count: infinite;
@@ -709,6 +708,30 @@ nav.stickySide ul li span {
     }
 }
 
+/*todo <============================= MOBILE BUTTON NAVBAR ============================================> */
+
+#mobile-btn-navbar {
+    width: 104%;
+    background-color: var(--pure-white);
+    border: 2px solid var(--middlegrey);
+    border-radius: 12px;
+    padding: 10px 16px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: -6px;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+#mobile-btn-navbar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    padding: 6px;
+    transition: 0.5s;
+}
+#mobile-btn-navbar img:hover {
+    background-color: var(--yellowcalm);
+}
 
 /*todo <============================= MUSIC PLAYER ============================================> */
 
