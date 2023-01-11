@@ -753,7 +753,7 @@ nav.stickySide ul li span {
 /*todo <============================= SALE TICKET FORMAT ============================================> */
 
 .compo-cards:nth-child(8){
-    height: 514px;
+    height: 530px;
     background-color: var(--middlegrey);
     padding: 16px;
     border-radius: 4px;
@@ -800,7 +800,22 @@ nav.stickySide ul li span {
     text-align: left;
     justify-content: space-between;
 }
-
+#resume-ticket {
+    margin-top: 8px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    border-bottom: 2px dashed var(--pure-black);
+    padding-bottom: 8px;
+    text-align: right;
+}
+#footer-ticket-sale {
+    font-weight: 700;
+    margin-top: 8px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    padding-bottom: 8px;
+    text-align: center;
+}
 
 /*todo <============================= COMPONENTS GRID MOBILE  ============================================> */
 
@@ -811,6 +826,17 @@ nav.stickySide ul li span {
 }
 @media (min-width: 1610px) {
     .componets-container .compo-cards:nth-child(5) {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1284px) {
+    .componets-container .compo-cards:nth-child(8) {
+        margin-top: 0px;
+    }
+}
+@media (min-width: 1610px) {
+    .componets-container .compo-cards:nth-child(8) {
         margin-top: 0px;
     }
 }
