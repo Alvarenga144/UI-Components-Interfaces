@@ -750,18 +750,56 @@ nav.stickySide ul li span {
     margin-top: -76px;
 }
 
-
-
-
-
-
 /*todo <============================= SALE TICKET FORMAT ============================================> */
 
-
-
-
-
-
+.compo-cards:nth-child(8){
+    height: 514px;
+    background-color: var(--middlegrey);
+    padding: 16px;
+    border-radius: 4px;
+    border-top: 1px solid var(--pure-white);
+    border-left: 1px solid var(--pure-white);
+    border-right: 1px solid var(--greenbrown);
+    border-bottom: 1px solid var(--greenbrown);
+    font-size: var(--sm);
+    font-weight: 400;
+}
+#header-ticket-sale {
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 12px;
+    border-bottom: 2px dashed var(--pure-black);
+    padding-bottom: 8px;
+}
+#data-ticket-sale {
+    margin-top: 8px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    text-align: left;
+    margin-bottom: 12px;
+    border-bottom: 2px dashed var(--pure-black);
+    padding-bottom: 8px;
+}
+#detail-sales {
+    margin-top: 4px;
+    vertical-align: middle;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border-bottom: 2px dashed var(--pure-black);
+    padding-bottom: 8px;
+}
+#detail-sales div:nth-child(1) {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    font-weight: 700;
+}
+#detail-sales .details-ccnt {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
 
 
 /*todo <============================= COMPONENTS GRID MOBILE  ============================================> */
