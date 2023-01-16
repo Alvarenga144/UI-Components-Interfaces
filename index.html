@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Components Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favComponents.ico" type="image/png">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favComponents.ico" type="image/png" />
     <!-- Local Bootstrap CSS
     <link rel="stylesheet" href="resources/css/bootstrap.min.css"> -->
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <!-- Main Navbar -->
         <header id="main-navbar">
-            <img src="images/icons/list.svg" alt="burguerMenu" class="BurguerMenu">
+            <img src="images/icons/list.svg" alt="burguerMenu" class="BurguerMenu" />
             <a href="#" id="logo-main-navbar" class="logo-main">UI Components</a>
             <form action="#" method="#">
-                <input type="text" placeholder="Search Something..." id="search-input">
-                <button type="submit" id="btn-search"><img src="images/icons/search.svg" alt="search"></button>
+                <input type="text" placeholder="Search Something..." id="search-input" />
+                <button type="submit" id="btn-search">
+                    <img src="images/icons/search.svg" alt="search" />
+                </button>
             </form>
             <ul>
-                <li><a href="https://github.com/Alvarenga144" target="_blank"><img src="images/icons/github.svg" alt="github" class="li-ico"></a></li>
-                <li><a href="#"><img src="images/icons/bell.svg" alt="notis" class="li-ico"></a></li>
+                <li>
+                    <a href="https://github.com/Alvarenga144" target="_blank"><img src="images/icons/github.svg"
+                            alt="github" class="li-ico" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/bell.svg" alt="notis" class="li-ico" /></a>
+                </li>
                 <li><a href="#" id="login-button-main">Log in</a></li>
                 <li><a href="#" id="register-button-main">Register</a></li>
             </ul>
@@ -34,49 +45,49 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/house.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/house.svg" alt="logo-sidebar" />
                         <span class="nav-item">Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/person.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/person.svg" alt="logo-sidebar" />
                         <span class="nav-item">Profile</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/wallet2.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/wallet2.svg" alt="logo-sidebar" />
                         <span class="nav-item">Wallet</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/bookmarks.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/bookmarks.svg" alt="logo-sidebar" />
                         <span class="nav-item">Bookmarks</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/menu-button-wide.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/menu-button-wide.svg" alt="logo-sidebar" />
                         <span class="nav-item">Task</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/gear.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/gear.svg" alt="logo-sidebar" />
                         <span class="nav-item">Settings</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/question-octagon.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/question-octagon.svg" alt="logo-sidebar" />
                         <span class="nav-item">Help</span>
                     </a>
                 </li>
-                <li  class="side-nav-botton-ico">
+                <li class="side-nav-botton-ico">
                     <a href="#">
-                        <img class="side-navbar-icons" src="images/icons/box-arrow-right.svg" alt="logo-sidebar">
+                        <img class="side-navbar-icons" src="images/icons/box-arrow-right.svg" alt="logo-sidebar" />
                         <span class="nav-item">Log out</span>
                     </a>
                 </li>
@@ -88,28 +99,32 @@
             <!-- Profile Pic -->
             <div class="compo-cards">
                 <div class="div-profile-pic">
-                    <img src="images/DrawKit Vector Illustration Team Work Cut.png" alt="profile-pic-card">
+                    <img src="images/DrawKit Vector Illustration Team Work Cut.png" alt="profile-pic-card" />
                     <div id="star-circle">
-                        <img src="images/icons/patch-check.svg" alt="star-circle">
+                        <img src="images/icons/patch-check.svg" alt="star-circle" />
                     </div>
                     <div id="check-list">
-                        <img src="images/icons/star.svg" alt="star-list">
-                        <img src="images/icons/list-check.svg" alt="list-chekss">
+                        <img src="images/icons/star.svg" alt="star-list" />
+                        <img src="images/icons/list-check.svg" alt="list-chekss" />
                     </div>
                 </div>
                 <div class="paragraph-profile-pic">
                     <p>Welcome back,</p>
                     <p>Esteban Alvarenga.</p>
                 </div>
-                <button id="card-button-info">View Profile
-                    <img src="images/icons/box-arrow-up-right.svg" alt="arrow-blank">
+                <button id="card-button-info">
+                    View Profile
+                    <img src="images/icons/box-arrow-up-right.svg" alt="arrow-blank" />
                 </button>
             </div>
             <!-- Wallet Crypto -->
             <div class="compo-cards">
                 <div class="saludo-wallet">
-                    <p>Hello, <br> <b>Esteban</b></p>
-                    <img src="images/icons/qr-code-scan.svg" alt="qr-code-wallet" id="qr-code-wallet">
+                    <p>
+                        Hello, <br />
+                        <b>Esteban</b>
+                    </p>
+                    <img src="images/icons/qr-code-scan.svg" alt="qr-code-wallet" id="qr-code-wallet" />
                 </div>
                 <div class="your-balances">
                     <p>Your balances</p>
@@ -130,91 +145,152 @@
                     <div id="today-movements">
                         <p class="dates-movements">Today</p>
                         <div class="you-recived-dollars">
-                            <div><img src="images/Dollar.png" alt="your-img-transac"></div>
+                            <div>
+                                <img src="images/Dollar.png" alt="your-img-transac" />
+                            </div>
                             <div>
                                 <p>You Received</p>
                                 <p>+$50.00 Dollars</p>
                             </div>
                         </div>
                         <div class="you-recived-bitcoin">
-                            <div><img src="images/Bitcoin.svg.png" alt="your-img-transac"></div>
+                            <div>
+                                <img src="images/Bitcoin.svg.png" alt="your-img-transac" />
+                            </div>
                             <div>
                                 <p>You sent</p>
-                                <p>-$144.00 USD in Bitcoin </p>
+                                <p>-$144.00 USD in Bitcoin</p>
                             </div>
                         </div>
                     </div>
                     <div id="yesterday-movements">
                         <p class="dates-movements">Thursday, 29 December 2022</p>
                         <div class="you-recived-bitcoin">
-                            <div><img src="images/Bitcoin.svg.png" alt="your-img-transac"></div>
+                            <div>
+                                <img src="images/Bitcoin.svg.png" alt="your-img-transac" />
+                            </div>
                             <div>
                                 <p>You Received</p>
-                                <p>+$9.99 USD in Bitcoin </p>
+                                <p>+$9.99 USD in Bitcoin</p>
                             </div>
                         </div>
                     </div>
                     <button id="all-movements-crypto">View all movements</button>
                 </div>
             </div>
-            <!-- Stories Container -->
+            <!-- Stories Container, Mobile button navbar and Calendar -->
             <div class="compo-cards">
                 <div class="scroller">
                     <div class="scroller-item">
-                        <img src="images/stories/estebanalvarenga.jpg" alt="">
+                        <img src="images/stories/estebanalvarenga.jpg" alt="" />
                         <p>Esteban A...</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/andreaalfaro.jpg" alt="">
+                        <img src="images/stories/andreaalfaro.jpg" alt="" />
                         <p>bearsock_</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/freddyvega.jpg" alt="">
+                        <img src="images/stories/freddyvega.jpg" alt="" />
                         <p>freddier</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/alexpineda.jpg" alt="">
+                        <img src="images/stories/alexpineda.jpg" alt="" />
                         <p>Alex Pine..</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/juandc.jpg" alt="">
+                        <img src="images/stories/juandc.jpg" alt="" />
                         <p>Juan Castro</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/kevinchacon.jpg" alt="">
+                        <img src="images/stories/kevinchacon.jpg" alt="" />
                         <p>Keevinchacon</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/nayibbukele.jpg" alt="">
+                        <img src="images/stories/nayibbukele.jpg" alt="" />
                         <p>Nayib Buk...</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/paolaayala.jpg" alt="">
+                        <img src="images/stories/paolaayala.jpg" alt="" />
                         <p>Paola Ayala</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/platzi.jpg" alt="">
+                        <img src="images/stories/platzi.jpg" alt="" />
                         <p>platzi</p>
                     </div>
                     <div class="scroller-item">
-                        <img src="images/stories/teffcode.jpg" alt="">
+                        <img src="images/stories/teffcode.jpg" alt="" />
                         <p>teffcode</p>
                     </div>
                 </div>
 
                 <div id="mobile-btn-navbar">
-                    <img src="images/icons/house.svg" alt="home" title="home">
-                    <img src="images/icons/search.svg" alt="search" title="Search">
-                    <img src="images/icons/plus-circle.svg" alt="new post" title="New Post">
-                    <img src="images/icons/bell.svg" alt="notifications" title="Notifications">
-                    <img src="images/icons/envelope.svg" alt="direct messages" title="Mail">
+                    <img src="images/icons/house.svg" alt="home" title="home" />
+                    <img src="images/icons/search.svg" alt="search" title="Search" />
+                    <img src="images/icons/plus-circle.svg" alt="new post" title="New Post" />
+                    <img src="images/icons/bell.svg" alt="notifications" title="Notifications" />
+                    <img src="images/icons/envelope.svg" alt="direct messages" title="Mail" />
                 </div>
-
+                <div id="thats-calendar">
+                    <div class="wrapper">
+                        <header>
+                            <p class="current-date">September 2022</p>
+                            <div class="icons">
+                                <span class="material-symbols-rounded"></span>
+                                <span class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                        </header>
+                        <div class="calendar">
+                            <ul class="weeks">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="days">
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li>31</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li>23</li>
+                                <li>24</li>
+                                <li>25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Music Player -->
-            <div class="compo-cards">
-
-            </div>
+            <div class="compo-cards"></div>
             <!-- 5 -->
             <div class="compo-cards"></div>
             <!-- 6 -->
@@ -224,13 +300,18 @@
             <!-- Sale ticket format -->
             <div class="compo-cards">
                 <div id="header-ticket-sale">
-                    <P> COFFEE'S MOUNSTER, COFFEE SHOP S.A DE C.V. - 
-                        CALLE DELGADO AV. MONSEÑOR ROMERO LOCAL. 16, CENTRO HISTORICO SAN SALVADOR, SAN SALVADOR - 
-                        NIT: 0144-X11X1X-11X-4 - NRC: 234204-2 - GIRO: RESTAURANTES - CAJA 1
-                    </P>
+                    <p>
+                        COFFEE'S MOUNSTER, COFFEE SHOP S.A DE C.V. - CALLE DELGADO AV.
+                        MONSEÑOR ROMERO LOCAL. 16, CENTRO HISTORICO SAN SALVADOR, SAN
+                        SALVADOR - NIT: 0144-X11X1X-11X-4 - NRC: 234204-2 - GIRO:
+                        RESTAURANTES - CAJA 1
+                    </p>
                 </div>
                 <div id="data-ticket-sale">
-                    <p>TICKET NUMBER: NO 122-144 <br> DATE: 04/01/2023 <br> DEALER: ALEJANDRO LÓPEZ <br> 
+                    <p>
+                        TICKET NUMBER: NO 122-144 <br />
+                        DATE: 04/01/2023 <br />
+                        DEALER: ALEJANDRO LÓPEZ <br />
                         FIRMA:
                     </p>
                 </div>
@@ -238,7 +319,8 @@
                     <div>
                         <p>PRODUCT</p>
                         <p>QYT</p>
-                        <p>PRICE<UB/p>
+                        <p>PRICE<UB /p>
+                        </p>
                         <p>TOTAL</p>
                     </div>
                     <div class="details-ccnt">
@@ -268,15 +350,14 @@
                 </div>
                 <div id="footer-ticket-sale">
                     <p>
-                        THANKS FOR PREFER US - WE HOPE ALL LIKE YOU - WE HOPE TO SEE YOU SOON - HAVE A NICE DAY
+                        THANKS FOR PREFER US - WE HOPE ALL LIKE YOU - WE HOPE TO SEE YOU
+                        SOON - HAVE A NICE DAY
                     </p>
                 </div>
             </div>
         </div>
-        
-    
     </div>
-    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -284,4 +365,5 @@
     <!-- Main JS -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>

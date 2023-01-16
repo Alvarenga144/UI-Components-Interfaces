@@ -1,5 +1,6 @@
 /* Components Page's main styles */
 /*todo <============================= VARIABLES AND BASIC DECLARATIONS ====================================>   */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     /* Colors Palette */
@@ -11,19 +12,21 @@
     --soft-bluee: #5c89bc;
     --whitebones: #e9edde;
     --middlegrey: #CCCCCC;
-    
+
     /* Font Sizes */
     --xl: 30px;
     --ld: 20px;
     --md: 18px;
     --sm: 14px;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+
 body {
     background: var(--whitebones);
     min-height: 200vh;
@@ -45,11 +48,13 @@ body {
     /*           X | Y |blur|ratio   color*/
     box-shadow: 0px 0px 10px 0px var(--palee-blue);
 }
+
 header.sticky {
     padding: 16px 80px !important;
     background-color: var(--palee-blue);
 }
-#logo-main-navbar{
+
+#logo-main-navbar {
     position: relative;
     font-size: var(--ld);
     font-weight: 700;
@@ -59,6 +64,7 @@ header.sticky {
     letter-spacing: 2px;
     transition: 0.8s;
 }
+
 header form {
     display: flex;
     height: 30px;
@@ -68,6 +74,7 @@ header form {
     background-color: var(--pure-white);
     transition: 0.8s;
 }
+
 header form input {
     height: 100%;
     width: 100%;
@@ -80,10 +87,12 @@ header form input {
     transition: 0.4s;
     border-radius: 50px 0px 0px 50px;
 }
+
 header form input:focus {
     outline: none;
     background-color: var(--whitebones);
 }
+
 header form button {
     padding: 0px 10px 0px 10px;
     background-color: var(--soft-bluee);
@@ -94,29 +103,35 @@ header form button {
     border-radius: 8px 50px 50px 8px;
     transition: 0.4s;
 }
+
 header form button:hover {
     background-color: var(--yellowcalm);
 }
+
 header form button img {
     height: 14px;
     width: 14px;
     margin: 0;
     padding: 0;
 }
+
 header.sticky form {
     background-color: var(--palee-blue);
     border: 1px solid var(--soft-bluee);
 }
+
 header ul {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 header ul li {
     position: relative;
     list-style: none;
 }
+
 header ul li a {
     position: relative;
     margin: 0 14px;
@@ -126,6 +141,7 @@ header ul li a {
     transition: 0.4s;
     text-align: center;
 }
+
 header ul li a img.li-ico {
     height: 24px;
     width: 24px;
@@ -133,6 +149,7 @@ header ul li a img.li-ico {
     padding: 0;
     transition: 0.6s;
 }
+
 header ul li img.li-ico:hover {
     background-color: var(--yellowcalm);
     border-radius: 100%;
@@ -140,25 +157,30 @@ header ul li img.li-ico:hover {
     width: 24px;
     box-shadow: 0px 0px 20px 2px var(--yellowcalm);
 }
+
 #login-button-main {
     padding: 6px 12px;
     border-radius: 8px;
 }
+
 #login-button-main:hover {
     color: var(--yellowcalm);
 }
+
 #register-button-main {
     color: var(--pure-black);
     background-color: var(--yellowcalm);
     padding: 6px 12px;
     border-radius: 8px;
 }
+
 #register-button-main:hover {
     color: var(--soft-bluee);
     background-color: var(--yellowcalm);
     padding: 6px 12px;
     border-radius: 8px;
 }
+
 .BurguerMenu {
     position: relative;
     width: 26px;
@@ -172,6 +194,7 @@ header.sticky #logo-main-navbar,
 header.sticky ul li a {
     color: var(--pure-white);
 }
+
 header.sticky ul li img.li-ico {
     background-color: var(--whitebones);
     border-radius: 100%;
@@ -180,6 +203,7 @@ header.sticky ul li img.li-ico {
     padding: 2px;
     transition: 0.8s;
 }
+
 header.sticky ul li img.li-ico:hover {
     border-radius: 100%;
     height: 26px;
@@ -188,16 +212,19 @@ header.sticky ul li img.li-ico:hover {
 }
 
 /* Medias Displays */
-@media (max-width: 800px){
+@media (max-width: 800px) {
     header form {
         display: none;
     }
 }
-@media (max-width: 640px){
+
+@media (max-width: 640px) {
+
     header form,
     header ul {
         display: none;
     }
+
     .BurguerMenu {
         display: block;
     }
@@ -219,22 +246,26 @@ header.sticky ul li img.li-ico:hover {
     z-index: 90000;
     display: none;
 }
-.stickySide{
+
+.stickySide {
     background: var(--soft-bluee) !important;
 }
+
 #side-navbar-elements ul {
     list-style: none;
     position: relative;
     height: 100%;
 }
+
 #side-navbar-elements ul li {
     margin: 0px 20px 0px 20px;
     padding: 12px;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    
+
 }
+
 #side-navbar-elements ul li:hover {
     margin: 0px 20px 0px 20px;
     padding: 12px;
@@ -243,15 +274,18 @@ header.sticky ul li img.li-ico:hover {
     border-radius: 50px;
     background: var(--yellowcalm);
 }
+
 #side-navbar-elements ul li a {
     text-decoration: none;
 }
+
 #side-navbar-elements .side-navbar-icons {
     position: relative;
     height: 26px;
     width: 26px;
     vertical-align: middle;
 }
+
 #side-navbar-elements span {
     color: var(--pure-black);
     font-size: var(--sm);
@@ -260,13 +294,16 @@ header.sticky ul li img.li-ico:hover {
     text-transform: capitalize;
     transition: 0.8s;
 }
+
 nav.stickySide ul li span {
     color: var(--pure-white) !important;
 }
+
 .side-nav-botton-ico {
     position: absolute;
     bottom: 6px;
 }
+
 .side-nav-botton-ico span {
     margin: 0px 20px 0px 20px;
 }
@@ -293,16 +330,19 @@ nav.stickySide ul li span {
     position: relative;
     top: 100px;
 }
+
 .componets-container .compo-cards {
     width: 100%;
     height: 360px;
     border: 2px solid var(--pure-black);
 }
+
 @media (max-width: 640px) {
     .componets-container {
         grid-template-columns: repeat(auto-fill, 280px);
         gap: 22px;
     }
+
     .componets-container .compo-cards {
         width: 100%;
     }
@@ -317,6 +357,7 @@ nav.stickySide ul li span {
     border-radius: 25px;
     margin-top: 68px;
 }
+
 .div-profile-pic {
     background-color: var(--palee-blue);
     position: relative;
@@ -325,11 +366,13 @@ nav.stickySide ul li span {
     height: 148px;
     border-radius: 100%;
 }
+
 .compo-cards .div-profile-pic img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
 }
+
 #star-circle {
     width: 34px;
     height: 34px;
@@ -342,11 +385,13 @@ nav.stickySide ul li span {
     justify-content: center;
     align-items: center;
 }
+
 #star-circle img {
     position: relative;
     width: 24px;
     height: 24px;
 }
+
 #check-list {
     width: 72px;
     height: 34px;
@@ -360,31 +405,37 @@ nav.stickySide ul li span {
     align-items: center;
     color: var(--soft-bluee);
 }
+
 #check-list img {
     position: relative;
     width: 20px;
     height: 20px;
     margin-right: 4px;
 }
+
 #check-list img:nth-child(2) {
     position: relative;
     width: 22px;
     height: 22px;
 }
+
 .compo-cards .paragraph-profile-pic {
     display: grid;
     justify-items: center;
 }
+
 .compo-cards .paragraph-profile-pic p:nth-child(1) {
     position: relative;
     top: 18px;
     font-size: var(--md);
     font-weight: 300;
 }
+
 .compo-cards .paragraph-profile-pic p:nth-child(2) {
     font-size: var(--ld);
     font-weight: 700;
 }
+
 .compo-cards #card-button-info {
     font-size: var(--sm);
     font-weight: 700;
@@ -396,10 +447,12 @@ nav.stickySide ul li span {
     background-color: var(--pure-white);
     cursor: pointer;
 }
+
 .compo-cards button img {
     height: 12px;
     margin-left: 4px;
 }
+
 #card-button-info:hover {
     color: var(--pure-black);
     background-color: var(--yellowcalm);
@@ -412,6 +465,7 @@ nav.stickySide ul li span {
     border-radius: 25px;
     background-color: var(--pure-white);
 }
+
 .compo-cards .saludo-wallet {
     background: var(--middlegrey);
     border-radius: 25px 25px 0px 0px;
@@ -419,20 +473,24 @@ nav.stickySide ul li span {
     justify-content: space-between;
     padding: 20px 10px 40px 10px;
 }
+
 .compo-cards .saludo-wallet p {
     font-size: var(--ld);
     font-weight: 400;
 }
+
 .compo-cards .saludo-wallet #qr-code-wallet {
     width: 40px;
     height: 40px;
     margin-right: 6px;
     margin-top: 4px;
 }
+
 .compo-cards .your-balances #content-balances {
     display: flex;
     justify-content: space-between;
 }
+
 .compo-cards .your-balances {
     background-color: var(--pure-white);
     border-radius: 25px;
@@ -440,6 +498,7 @@ nav.stickySide ul li span {
     position: relative;
     top: -25px;
 }
+
 .compo-cards .your-balances p:nth-child(1) {
     color: var(--pure-black);
     font-size: var(--md);
@@ -447,7 +506,8 @@ nav.stickySide ul li span {
     position: relative;
     margin-bottom: 10px;
 }
-#content-balances .dollars-wallet div:nth-child(1){
+
+#content-balances .dollars-wallet div:nth-child(1) {
     position: relative;
     color: var(--pure-white);
     background-color: #0048ff;
@@ -458,15 +518,18 @@ nav.stickySide ul li span {
     text-align: center;
     padding: 2px 4px 2px 4px;
 }
+
 #content-balances .dollars-wallet p {
     color: var(--pure-black);
     font-size: var(--md);
     font-weight: 700;
     margin-top: 4px;
 }
+
 #content-balances .bitcoin-wallet {
     text-align: right;
 }
+
 #content-balances .bitcoin-wallet div:nth-child(1) {
     position: relative;
     color: var(--pure-white);
@@ -479,22 +542,26 @@ nav.stickySide ul li span {
     margin-left: 80px;
     padding: 2px 4px 2px 4px;
 }
+
 #content-balances .bitcoin-wallet p:nth-child(2) {
     color: var(--pure-black);
     font-size: var(--md);
     font-weight: 700;
     margin-top: 4px;
 }
+
 #content-balances .bitcoin-wallet p:nth-child(3) {
     color: var(--palee-blue);
     font-size: var(--sm);
     font-weight: 200;
 }
+
 .compo-cards .your-movements {
     position: relative;
     top: -44px;
     padding: 0px 10px 20px 10px;
 }
+
 .compo-cards .your-movements #my-movements {
     color: var(--pure-black);
     font-size: var(--md);
@@ -502,6 +569,7 @@ nav.stickySide ul li span {
     position: relative;
     margin-bottom: 4px;
 }
+
 .dates-movements {
     font-size: var(--sm);
     font-weight: 400;
@@ -509,53 +577,63 @@ nav.stickySide ul li span {
     color: var(--palee-blue);
     margin-top: 6px;
 }
+
 #today-movements .you-recived-dollars {
     display: flex;
     justify-content: left;
     vertical-align: middle;
     padding-top: 4px;
 }
+
 #today-movements .you-recived-dollars div img {
     width: 38px;
     height: 38px;
     border-radius: 25px;
     margin-left: 4px;
 }
+
 #today-movements .you-recived-dollars div:nth-child(2) {
     font-size: var(--sm);
     font-weight: 400;
     position: relative;
     margin-left: 4px;
 }
-#today-movements .you-recived-dollars div:nth-child(2) p{
+
+#today-movements .you-recived-dollars div:nth-child(2) p {
     margin-left: 4px;
 }
+
 #today-movements .you-recived-dollars div:nth-child(2) p:nth-child(2) {
     font-size: var(--sm);
     font-weight: 700;
 }
+
 .you-recived-bitcoin {
     display: flex;
     justify-content: left;
     vertical-align: middle;
     padding-top: 4px;
 }
+
 .you-recived-bitcoin div img {
     width: 38px;
     height: 38px;
     border-radius: 25px;
     margin-left: 4px;
 }
+
 .you-recived-bitcoin div:nth-child(2) {
     font-size: var(--sm);
     font-weight: 400;
     position: relative;
     margin-left: 8px;
 }
+
 .you-recived-bitcoin div:nth-child(2) p:nth-child(2) {
     font-size: var(--sm);
     font-weight: 700;
 }
+
 #all-movements-crypto {
     font-size: var(--sm);
     font-weight: 700;
@@ -569,9 +647,16 @@ nav.stickySide ul li span {
     margin-top: 4px;
     margin-left: 6px;
 }
+
 #all-movements-crypto:hover {
     color: var(--pure-black);
     background-color: var(--middlegrey);
+}
+
+/*todo <===================== STORIES INSTAGRAM, MOBILE NAVBAR, CALENDAR ===========================> */
+
+.componets-container .compo-cards:nth-child(3) {
+    height: 506px;
 }
 
 /*todo <============================= STORIES INSTAGRAM ============================================> */
@@ -588,9 +673,11 @@ nav.stickySide ul li span {
     overflow-x: auto;
     margin-left: -6px;
 }
+
 .scroller::-webkit-scrollbar {
     display: none;
 }
+
 .scroller-item {
     position: relative;
     width: 84px;
@@ -602,15 +689,18 @@ nav.stickySide ul li span {
     text-align: center;
     cursor: pointer;
 }
+
 .scroller-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
+
 .scroller-item p {
     margin: 6px 0px;
 }
+
 .scroller-item::before {
     content: '';
     position: absolute;
@@ -620,19 +710,22 @@ nav.stickySide ul li span {
     width: calc(100% + 15px);
     height: calc(100% + 15px);
     background-image: linear-gradient(45deg, #ffaf04 15%, #e6683c 25%,
-    #dc2743 50%, #6902be 75%, #bc1888 100%);
+            #dc2743 50%, #6902be 75%, #bc1888 100%);
     border-radius: inherit;
     z-index: -1;
 }
+
 .scroller-item:nth-child(2)::before {
     background-image: linear-gradient(45deg, #1cd14f 100%, #1cd14f 100%,
-    #1cd14f 100%, #1cd14f 100%, #1cd14f 100%);
+            #1cd14f 100%, #1cd14f 100%, #1cd14f 100%);
 }
+
 .scroller-item:hover::before {
     animation-duration: 1.5s;
     animation-name: story;
     animation-iteration-count: infinite;
 }
+
 .scroller-item:hover:nth-child(2):before {
     transition: 1.5;
     animation-duration: 1.5s;
@@ -642,73 +735,93 @@ nav.stickySide ul li span {
 
 @keyframes story {
     0% {
-        background: linear-gradient(36deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(36deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     10% {
-        background: linear-gradient(72deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(72deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     20% {
-        background: linear-gradient(108deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(108deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     30% {
-        background: linear-gradient(144deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(144deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     40% {
-        background: linear-gradient(180deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(180deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     50% {
-        background: linear-gradient(218deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(218deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     60% {
-        background: linear-gradient(252deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(252deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     70% {
-        background: linear-gradient(288deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(288deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     80% {
-        background: linear-gradient(324deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(324deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     90% {
-        background: linear-gradient(360deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(360deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
+
     100% {
-        background: linear-gradient(396deg, rgb(255,255,255)0%, rgb(255,255,255)0%, rgb(255,201,0)28%, rgb(255,0,95)73%, rgb(255,9,237)100%);
+        background: linear-gradient(396deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)0%, rgb(255, 201, 0)28%, rgb(255, 0, 95)73%, rgb(255, 9, 237)100%);
     }
 }
 
 @keyframes story-friends {
     40% {
-        background: linear-gradient(36deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(36deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     10% {
-        background: linear-gradient(72deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(72deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     20% {
-        background: linear-gradient(108deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(108deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     30% {
-        background: linear-gradient(144deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(144deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     40% {
-        background: linear-gradient(180deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(180deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     50% {
-        background: linear-gradient(218deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(218deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     60% {
-        background: linear-gradient(252deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(252deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     70% {
-        background: linear-gradient(288deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(288deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     80% {
-        background: linear-gradient(324deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(324deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     90% {
-        background: linear-gradient(360deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(360deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
+
     100% {
-        background: linear-gradient(396deg, rgb(255,255,255)0%, rgb(255,255,255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
+        background: linear-gradient(396deg, rgb(255, 255, 255)0%, rgb(255, 255, 255)5%, #1cd14f 28%, #1cd14f 73%, #1cd14f 100%);
     }
 }
 
@@ -726,6 +839,7 @@ nav.stickySide ul li span {
     justify-content: space-between;
     vertical-align: middle;
 }
+
 #mobile-btn-navbar img {
     width: 36px;
     height: 36px;
@@ -733,8 +847,22 @@ nav.stickySide ul li span {
     padding: 6px;
     transition: 0.5s;
 }
+
 #mobile-btn-navbar img:hover {
     background-color: var(--yellowcalm);
+}
+
+/*todo <============================= CALENDAR ============================================> */
+
+#thats-calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 103%;
+    background-color: var(--pure-white);
 }
 
 /*todo <============================= MUSIC PLAYER ============================================> */
@@ -752,7 +880,7 @@ nav.stickySide ul li span {
 
 /*todo <============================= SALE TICKET FORMAT ============================================> */
 
-.compo-cards:nth-child(8){
+.compo-cards:nth-child(8) {
     height: 530px;
     background-color: var(--middlegrey);
     padding: 16px;
@@ -764,6 +892,7 @@ nav.stickySide ul li span {
     font-size: var(--sm);
     font-weight: 400;
 }
+
 #header-ticket-sale {
     font-weight: 700;
     text-align: center;
@@ -772,6 +901,7 @@ nav.stickySide ul li span {
     border-bottom: 2px dashed var(--pure-black);
     padding-bottom: 8px;
 }
+
 #data-ticket-sale {
     margin-top: 8px;
     vertical-align: middle;
@@ -781,6 +911,7 @@ nav.stickySide ul li span {
     border-bottom: 2px dashed var(--pure-black);
     padding-bottom: 8px;
 }
+
 #detail-sales {
     margin-top: 4px;
     vertical-align: middle;
@@ -789,17 +920,20 @@ nav.stickySide ul li span {
     border-bottom: 2px dashed var(--pure-black);
     padding-bottom: 8px;
 }
+
 #detail-sales div:nth-child(1) {
     display: flex;
     text-align: left;
     justify-content: space-between;
     font-weight: 700;
 }
+
 #detail-sales .details-ccnt {
     display: flex;
     text-align: left;
     justify-content: space-between;
 }
+
 #resume-ticket {
     margin-top: 8px;
     vertical-align: middle;
@@ -808,6 +942,7 @@ nav.stickySide ul li span {
     padding-bottom: 8px;
     text-align: right;
 }
+
 #footer-ticket-sale {
     font-weight: 700;
     margin-top: 8px;
@@ -824,6 +959,7 @@ nav.stickySide ul li span {
         margin-top: 0px;
     }
 }
+
 @media (min-width: 1610px) {
     .componets-container .compo-cards:nth-child(5) {
         margin-top: 0px;
@@ -835,6 +971,7 @@ nav.stickySide ul li span {
         margin-top: 0px;
     }
 }
+
 @media (min-width: 1610px) {
     .componets-container .compo-cards:nth-child(8) {
         margin-top: 0px;
