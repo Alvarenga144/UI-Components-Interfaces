@@ -28,8 +28,8 @@
 }
 
 body {
-    background: var(--whitebones);
-    min-height: 200vh;
+    background: linear-gradient(165deg, var(--middlegrey) 40%, #ff64f5 100%);
+    min-height: 120vh;
 }
 
 /*todo <============================= MAIN NAVBAR MANU FIXED IN THE TOP ===================================>   */
@@ -46,7 +46,7 @@ body {
     padding: 26px 20px;
     z-index: 100000;
     /*           X | Y |blur|ratio   color*/
-    box-shadow: 0px 0px 10px 0px var(--palee-blue);
+    /*box-shadow: 0px 0px 10px 0px var(--palee-blue);*/
 }
 
 header.sticky {
@@ -334,7 +334,6 @@ nav.stickySide ul li span {
 .componets-container .compo-cards {
     width: 100%;
     height: 360px;
-    border: 2px solid var(--pure-black);
 }
 
 @media (max-width: 640px) {
@@ -351,6 +350,7 @@ nav.stickySide ul li span {
 /*todo <============================= PROFILE CARD  ============================================> */
 
 .componets-container .compo-cards:nth-child(1) {
+    height: 390px;
     display: grid;
     justify-items: center;
     background-color: var(--soft-bluee);
@@ -467,7 +467,7 @@ nav.stickySide ul li span {
 }
 
 .compo-cards .saludo-wallet {
-    background: var(--middlegrey);
+    background: var(--whitebones);
     border-radius: 25px 25px 0px 0px;
     display: flex;
     justify-content: space-between;
@@ -664,7 +664,9 @@ nav.stickySide ul li span {
 .scroller {
     width: 103%;
     height: 146px;
-    border: 2px solid var(--middlegrey);
+    border-left: 2px solid var(--middlegrey);
+    border-top: 2px solid var(--middlegrey);
+    border-right: 2px solid var(--middlegrey);
     border-radius: 12px;
     padding: 16px 10px 0px 10px;
     display: grid;
@@ -853,6 +855,9 @@ nav.stickySide ul li span {
 }
 
 /*todo <============================= CALENDAR ============================================> */
+.componets-container .compo-cards:nth-child(4) {
+    margin-bottom: 100px;
+}
 
 #thats-calendar {
     width: 103%;
@@ -860,19 +865,18 @@ nav.stickySide ul li span {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    border: 1px solid #6902be ;
 }
 
 .wrapper {
     width: 103%;
+    border-radius: 25px;
     background-color: var(--pure-white);
 }
 
 .wrapper header {
     display: flex;
     align-items: center;
-    padding: 20px 24px 10px;
+    padding: 24px 20px 10px;
     justify-content: space-between;
 }
 
@@ -883,27 +887,28 @@ header .current-date {
 
 header .icons span {
     display: inline-block;
-    height: 24px;
-    width: 24px;
-    color: var(--palee-blue);
-    font-size: var(--md);
+    height: 36px;
+    width: 36px;
+    color: var(--soft-bluee);
+    font-size: var(--ld);
     font-weight: 700;
-    margin: 0 2px;
+    margin: 0 6px;
     cursor: pointer;
     text-align: center;
-    line-height: 20px;
+    line-height: 32px;
     border-radius: 50%;
 }
 
 header .icons span:hover {
-    background-color: var(--middlegrey);
+    background-color: var(--whitebones);
 }
 
 header .icons span:last-child {
-    margin-right: -10px;
+    margin-right: -4px;
 }
+
 .calendar {
-    padding: 20px;
+    padding: 14px;
     font-size: var(--sm);
 }
 
@@ -936,8 +941,9 @@ header .icons span:last-child {
 .days li.incative-days {
     color: var(--middlegrey);
 }
+
 .days li.active-day {
-    color: var(--pure-white );
+    color: var(--pure-white);
 }
 
 .calendar .days li::before {
@@ -952,33 +958,24 @@ header .icons span:last-child {
     transform: translate(-50%, -50%);
 }
 
-.days li:hover::before{
-    background-color: var(--middlegrey);
+.days li:hover::before {
+    background-color: var(--whitebones);
 }
 
 .days li.active-day::before {
     background-color: var(--yellowcalm);
 }
 
-
-
-/*todo <============================= MUSIC PLAYER ============================================> */
-
-.componets-container .compo-cards:nth-child(4) {
-    height: 440px;
-    border-radius: 25px;
-}
-
-
 /*todo <============================= SALE TICKET FORMAT ============================================> */
 
 .compo-cards-inside {
-    height: 360px;
+    height: 356px;
     width: 103%;
+    margin-top: 10px;
     margin-left: -6px;
-    background-color: var(--middlegrey);
+    background: linear-gradient(180deg, var(--whitebones) 50%, var(--middlegrey) 100%);
     padding: 16px;
-    border-radius: 4px;
+    border-radius: 25px;
     border-top: 1px solid var(--pure-white);
     border-left: 1px solid var(--pure-white);
     border-right: 1px solid var(--greenbrown);

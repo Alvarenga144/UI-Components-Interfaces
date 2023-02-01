@@ -1,7 +1,7 @@
 // TODO JAVASCRIPT CODE OF COMPONENTS HERE ==>
 
 // Header Main Navbar events
-window.addEventListener("scroll", function () {  
+window.addEventListener("scroll", function () {
     var header = document.querySelector('header');
     header.classList.toggle("sticky", window.scrollY > 0);
 })
@@ -18,27 +18,27 @@ prevNextIcon = document.querySelectorAll('.icons span');
 
 
 let calDate = new Date(),
-currYear = calDate.getFullYear(),
-currMonth = calDate.getMonth();
+    currYear = calDate.getFullYear(),
+    currMonth = calDate.getMonth();
 
 const allMonths = ['January', 'Febrary', 'March', 'April',
-'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const renderCalendar = () => {
     let firstDateOfMoth = new Date(currYear, currMonth, 1).getDay(), // getting first date of moth
-    lastDateOfMoth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of moth
-    lastDayOfMoth = new Date(currYear, currMonth, lastDateOfMoth).getDay(), // getting last day of moth
-    lastDateOfLastMoth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previus month
-    
+        lastDateOfMoth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of moth
+        lastDayOfMoth = new Date(currYear, currMonth, lastDateOfMoth).getDay(), // getting last day of moth
+        lastDateOfLastMoth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previus month
+
     let liTag = '';
-    
+
     for (let i = firstDateOfMoth; i > 0; i--) {
         liTag += `<li class="incative-days">${lastDateOfLastMoth - i + 1}</li>`;
     }
 
     for (let i = 1; i <= lastDateOfMoth; i++) {
-        let isToday = i === calDate.getDate() && currMonth === new Date().getMonth() 
-                    && currYear === new Date().getFullYear() ? "active-day" : "";
+        let isToday = i === calDate.getDate() && currMonth === new Date().getMonth()
+            && currYear === new Date().getFullYear() ? "active-day" : "";
         liTag += `<li class="${isToday}">${i}</li>`;
     }
 
@@ -54,9 +54,9 @@ renderCalendar();
 
 prevNextIcon.forEach(icon => {
     icon.addEventListener('click', () => {
-        currMonth = icon.id === 'prev' ? currMonth -1 : currMonth + 1;
+        currMonth = icon.id === 'prev' ? currMonth - 1 : currMonth + 1;
 
-        if (currMonth < 0 || currMonth > 11 ) {
+        if (currMonth < 0 || currMonth > 11) {
             date = new Date(currYear, currMonth);
             currYear = calDate.getFullYear();
             currMonth = calDate.getMonth();
@@ -66,10 +66,6 @@ prevNextIcon.forEach(icon => {
         renderCalendar();
     })
 });
-
-
-
-
 
 
 // Ticket dynamic date
@@ -107,7 +103,7 @@ function ticketDate() {
             day = 'Uknown Month';
             break;
     }
-    
+
     switch (month) {
         case 0:
             month = 'January';
@@ -132,7 +128,7 @@ function ticketDate() {
             break;
         case 7:
             month = 'Augost';
-            break;    
+            break;
         case 8:
             month = 'September';
             break;
