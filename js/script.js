@@ -11,6 +11,67 @@ window.addEventListener("scroll", function () {
     nav.classList.toggle("stickySide", window.scrollY > 0)
 })
 
+//TODO ---------- Calendar dynamic date
+const currentDate = document.querySelector('.current-date');
+dayTags = document.querySelector('.days');
+prevNextIcon = document.querySelectorAll('.icons span');
+
+
+let calDate = new Date(),
+currYear = calDate.getFullYear(),
+currMonth = calDate.getMonth();
+
+const allMonths = ['January', 'Febrary', 'March', 'April',
+'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+const renderCalendar = () => {
+    let firstDateOfMoth = new Date(currYear, currMonth, 1).getDay(), // getting first date of moth
+    lastDateOfMoth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of moth
+    lastDayOfMoth = new Date(currYear, currMonth, lastDateOfMoth).getDay(), // getting last day of moth
+    lastDateOfLastMoth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previus month
+    
+    let liTag = '';
+    
+    for (let i = firstDateOfMoth; i > 0; i--) {
+        liTag += `<li class="incative-days">${lastDateOfLastMoth - i + 1}</li>`;
+    }
+
+    for (let i = 1; i <= lastDateOfMoth; i++) {
+        let isToday = i === calDate.getDate() && currMonth === new Date().getMonth() 
+                    && currYear === new Date().getFullYear() ? "active-day" : "";
+        liTag += `<li class="${isToday}">${i}</li>`;
+    }
+
+    for (let i = lastDayOfMoth; i < 6; i++) {
+        liTag += `<li class="incative-days">${i - lastDayOfMoth + 1}</li>`;
+    }
+
+    currentDate.innerHTML = `${allMonths[currMonth]} ${currYear}`;
+    dayTags.innerHTML = liTag;
+
+}
+renderCalendar();
+
+prevNextIcon.forEach(icon => {
+    icon.addEventListener('click', () => {
+        currMonth = icon.id === 'prev' ? currMonth -1 : currMonth + 1;
+
+        if (currMonth < 0 || currMonth > 11 ) {
+            date = new Date(currYear, currMonth);
+            currYear = calDate.getFullYear();
+            currMonth = calDate.getMonth();
+        } else {
+            date = new Date();
+        }
+        renderCalendar();
+    })
+});
+
+
+
+
+
+
 // Ticket dynamic date
 function ticketDate() {
     var td = new Date();

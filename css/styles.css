@@ -855,15 +855,112 @@ nav.stickySide ul li span {
 /*todo <============================= CALENDAR ============================================> */
 
 #thats-calendar {
+    width: 103%;
+    margin-left: -6px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
+    border: 1px solid #6902be ;
 }
 
 .wrapper {
     width: 103%;
     background-color: var(--pure-white);
 }
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 20px 24px 10px;
+    justify-content: space-between;
+}
+
+header .current-date {
+    font-size: var(--ld);
+    font-weight: 700;
+}
+
+header .icons span {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    color: var(--palee-blue);
+    font-size: var(--md);
+    font-weight: 700;
+    margin: 0 2px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+header .icons span:hover {
+    background-color: var(--middlegrey);
+}
+
+header .icons span:last-child {
+    margin-right: -10px;
+}
+.calendar {
+    padding: 20px;
+    font-size: var(--sm);
+}
+
+.calendar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 20px;
+}
+
+.calendar .weeks li {
+    font-weight: 700;
+}
+
+.calendar ul li {
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.calendar .days li {
+    z-index: 5;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.days li.incative-days {
+    color: var(--middlegrey);
+}
+.days li.active-day {
+    color: var(--pure-white );
+}
+
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    height: 36px;
+    width: 36px;
+    top: 50%;
+    left: 50%;
+    z-index: -5;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover::before{
+    background-color: var(--middlegrey);
+}
+
+.days li.active-day::before {
+    background-color: var(--yellowcalm);
+}
+
+
 
 /*todo <============================= MUSIC PLAYER ============================================> */
 
@@ -872,16 +969,13 @@ nav.stickySide ul li span {
     border-radius: 25px;
 }
 
-.componets-container .compo-cards:nth-child(5) {
-    height: 440px;
-    border-radius: 25px;
-    margin-top: -76px;
-}
 
 /*todo <============================= SALE TICKET FORMAT ============================================> */
 
-.compo-cards:nth-child(8) {
-    height: 530px;
+.compo-cards-inside {
+    height: 360px;
+    width: 103%;
+    margin-left: -6px;
     background-color: var(--middlegrey);
     padding: 16px;
     border-radius: 4px;
@@ -967,13 +1061,13 @@ nav.stickySide ul li span {
 }
 
 @media (max-width: 1284px) {
-    .componets-container .compo-cards:nth-child(8) {
+    .componets-container .compo-cards:nth-child(5) {
         margin-top: 0px;
     }
 }
 
 @media (min-width: 1610px) {
-    .componets-container .compo-cards:nth-child(8) {
+    .componets-container .compo-cards:nth-child(5) {
         margin-top: 0px;
     }
 }
