@@ -29,7 +29,21 @@
 
 body {
     background: linear-gradient(165deg, var(--middlegrey) 40%, #ff64f5 100%);
-    min-height: 120vh;
+}
+
+#container-main-for-all {
+    min-height: 110vh;
+}
+
+@media (max-width: 1284px) {
+    body {
+        min-height: 200vh;
+    }
+}
+@media (max-width: 680px) {
+    body {
+        min-height: 240vh;
+    }
 }
 
 /*todo <============================= MAIN NAVBAR MANU FIXED IN THE TOP ===================================>   */
@@ -1045,6 +1059,18 @@ header .icons span:last-child {
 
 /*todo <============================= COMPONENTS GRID MOBILE  ============================================> */
 
+@media (max-width: 640px) {
+    .componets-container .compo-cards-inside {
+        height: auto;
+    }
+}
+@media (max-width: 640px) {
+    .componets-container .compo-cards:nth-child(4) {
+        margin: 40px 0px;
+        height: auto;
+    }
+}
+/*
 @media (max-width: 1284px) {
     .componets-container .compo-cards:nth-child(5) {
         margin-top: 0px;
@@ -1068,3 +1094,5 @@ header .icons span:last-child {
         margin-top: 0px;
     }
 }
+*/
+
