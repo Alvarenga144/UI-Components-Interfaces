@@ -2,7 +2,7 @@
 
 Una página web estática muy común y corriente en cuanto a funcionabiliad, incluso más artistica que dinámica. Pero que contiene diferentes estilos de componentes o interfaces que pueden ser usados en distintios sitios web ⚛️.
 
-<img src="./imges/../images/ComponentsUI.gif" >
+<img alt="introducingUI" src="./imges/../images/ComponentsUI.gif" >
 
 [**Ir a la página de Componentes de Diseño**](https://alvarenga144.github.io/UI-Components-Interfaces/) Entre estos componentes hay:
 
